@@ -3,23 +3,28 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 */
 
 .titleContainer{
-    display:flex;
+    display: flexbox;
+    position:relative;
     
     width:auto;
-    height:100%;
+    height:auto;
+
+    object-fit:cover;
+
+    z-index:0;
 
     margin-top:1.5vh;
 
-    margin-left:0;
+    margin: left 10vw;;
 }
 
 .textContainer{
     display:flex;
     margin-left:10vw;
 
-    width:auto;
+    position:absolute;
 
-    z-index:9;
+    width:auto;
 
     background-color:red;
 
@@ -29,8 +34,11 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 
 .titleImg{
     width: 100vw;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 
+    z-index:0;
+
     filter:brightness(60%);
+    filter:blur(100%);
 }
