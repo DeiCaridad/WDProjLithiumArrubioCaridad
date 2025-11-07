@@ -2,8 +2,10 @@
 time spent editing: 21 minutes | i forogt how long its been since last update
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .titleContainer{
-    display: flexbox;
+    display: flex;
     position:relative;
     
     width:auto;
@@ -20,16 +22,12 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 
 .textContainer{
     display:flex;
-    margin-left:10vw;
-
+    margin: 10vw 0 0 6vw;
     position:absolute;
+    width:50%;
 
-    width:auto;
-
-    background-color:red;
-
-    border:2px;
-    border-style:solid;
+    /*border:2px;
+    border-style:solid;*/
 }
 
 .titleImg{
@@ -41,4 +39,43 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 
     filter:brightness(60%);
     filter:blur(100%);
+}
+
+.merriweather-sans-title{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size:100px;
+    color: #FFFFFF;
+}
+
+.merriweather-sans-gen{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.titleDesc{
+    position:absolute;
+    margin: 19.5vw 0 0 .6vw;
+    font-size:20px;
+    width:437px;
+}
+
+#TBRedirect{
+    background-color:#FFFFFF;   
+    position:absolute;
+    margin: 25vw 0 0 .6vw;
+    width:173px;
+    height:41px;
+    border-radius: 5px;
+    border:none;
+    font-size:20px;
+}
+
+#TBRedirect:hover{
+    background-color:#E0E0E0;
 }

@@ -10,10 +10,11 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="stylesHome.css">
         <link rel="icon" href="./assets/ProjFavicon.png" sizes="32x32" type="image/png">
-        <script src="script.js" defer></script>
+        <script src="main.js" defer></script>
+        <script src="./jsFiles/homePage.js" defer></script>
     </head>
     <header> <!--copy paste for future use in all pages-->
-        <a href="index.html"><img src="./assets/ProjFavicon.png" alt="Project Icon" style="width:5.5vh;height:5.5vh;margin-left:1vh;"></a>
+        <a href="index.html"><img src="./assets/ProjFavicon.png" alt="Project Icon" style="width:3.25vw;height:3.25vw;margin-left:1vh;"></a>
         
         <headerDropContainer>
 
@@ -56,9 +57,15 @@
         <div class="titleContainer"> <!--title section-->
             <img src="assets/Backgrounds/bg2.jpg" alt="pikachu" class="titleImg">
             <div class="textContainer">
-                <div class="title">
+                <div class="merriweather-sans-title">
                     Pokemon: Rebuilt
                 </div>
+                <div class="titleDesc merriweather-sans-gen">
+                    A general purpose Pokemon team builder for fans, by fans.
+                </div>
+                <button id="TBRedirect" class="merriweather-sans-gen" style="color:#121212;" onclick="tbuild()">
+                    Start Creating
+                </button>
             </div>
         </div>
 
