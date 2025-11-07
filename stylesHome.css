@@ -4,6 +4,8 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+/*title section*/
 .titleContainer{
     display: flex;
     position:relative;
@@ -78,4 +80,13 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 
 #TBRedirect:hover{
     background-color:#E0E0E0;
+}
+
+/*highlights*/
+
+.hiContainer{
+    width:auto;
+    height:600px;
+
+    position:relative;
 }
