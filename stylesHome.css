@@ -85,8 +85,60 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 /*highlights*/
 
 .hiContainer{
+    display:block;
     width:auto;
-    height:600px;
+    height:1120px;
+}
 
+.articleContainer{
     position:relative;
+    width:auto;
+    height:87%;
+
+    border:2px;
+    background-color:rgb(159, 227, 0);
+    border-style:solid;
+}
+
+#con1, #con2, #con3, #con4{
+    background-color:red;
+    position:absolute;
+}
+
+#con1{
+    width:670px;
+    height:430px;
+    margin: 0 0 0 72px;
+}
+
+#con2{
+    width:380px;
+    height:430px;
+    margin: 0 72px 0 0;
+    justify-self:end;
+}
+
+#con3{
+    width:375px;
+    height:500px;
+    margin: 450px 0 0 72px;
+    align-self:start;
+}
+
+#con4{
+    width:650px;
+    height:500px;
+    margin: 450px 72px 0 0;
+    align-self:start;
+    justify-self:end;
+}
+
+.merriweather-sans-Sarti{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color:#121212;
+    font-size:20px;
+    margin:12px 0 0 12px;
 }
