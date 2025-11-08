@@ -14,22 +14,19 @@ arrays below will be sorted by page according to the README file in the github r
   { name: "Pokémon GO Fest 2025: Max Finale", link: "https://pokemongohub.net/post/event/pokemon-go-august-2025-events/" },
   { name: "Kanto Celebration Event (Pokémon GO)", link: "https://pokemongohub.net/post/event/pokemon-go-september-2025-events/" },
   { name: "Flabébé Community Day (Pokémon GO)", link: "https://pokemongohub.net/post/event/pokemon-go-september-2025-events/" },
-  { name: "Raid Day (Sept 7, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
+  { name: "Raid Days (Pokémon GO)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
   { name: "Shadow Raid Weekend (Sept 20-21, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
-  { name: "Raid Day (Sept 28, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
-  { name: "Raid Day (Oct 4, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
-  { name: "Raid Day (Oct 18, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
-  { name: "Max Battle Day (Nov 1, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
-  { name: "Max Battle Weekend (Nov 21–24, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
-  { name: "Max Battle Weekend (Nov 29–30, 2025)", link: "https://pokemongo.com/en/post/save-the-date-s20" },
+  { name: "Max Battle Days: November", link: "https://pokemongo.com/en/post/save-the-date-s20" },
   { name: "Pokémon World Championships 2025", link: "https://worlds.pokemon.com/en-us" },
   { name: "Regional & Special Championships 2025 (Play! Pokémon)", link: "https://www.pokemon.com/us/play-pokemon/pokemon-events/championship-series/2025/regional-special-championships" },
   { name: "Wild Area 2025 (Japan/Global Event)", link: "https://www.nintendoworldreport.com/news/72205/pokemon-go-announces-2025-wild-area-event" },
-  { name: "Reddit Community Calendar (Fan Compilation)", link: "https://www.reddit.com/r/TheSilphRoad/comments/1l4kj41/june_2025_event_calendarrr/" },
   { name: "Pokémon Legends: Z-A – Mega Dimension DLC", link: "https://www.theverge.com/games/815416/pokemon-legends-za-mega-dimension-release-date" },
   { name: "Pokémon TCG Pocket: Extradimensional Crisis Pack", link: "https://www.polygon.com/pokemon/600812/pokemon-tcg-pocket-ultra-beasts-pack" },
-  { name: "Pokémon Champions (Upcoming Game 2026)", link: "https://www.wired.com/story/pokemon-company-announces-pokemon-champions-promises-legends-z-a-coming-in-2025" }];
+  { name: "Pokémon Champions (Upcoming Game 2026)", link: "https://www.wired.com/story/pokemon-company-announces-pokemon-champions-promises-legends-z-a-coming-in-2025" },
+  { name: "Pokemon Horizons: Season 2 Part 2 Now Available on Select Streaming Services!", link: "https://www.pokemon.com/us/pokemon-news/pokemon-horizons-season-2-part-2-available-on-amazon-apple-tv-and-youtube"}, 
 
-    export const TitleTop = [
+];
+
+    export const TitleBottom = [
         
     ]
