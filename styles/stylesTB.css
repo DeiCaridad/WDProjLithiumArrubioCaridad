@@ -1,0 +1,56 @@
+/*Main Area*/
+
+button{
+    background:none;
+    border:none;
+}
+
+.genContainer{
+    display:block;
+    width:auto;
+    height:auto;
+
+    /*border:2px;
+    border-style:solid;
+    border-color:black;*/
+}
+
+.topPortion{
+    width: 89.63vw;
+    height: 3.39vw;
+    background-color:#C7C7BB;
+    border-radius: 10px;
+    justify-self:center;
+    margin-top:3vw;
+}
+
+.topSelector{
+    display:flex;
+    width: fit-content;
+    height: 3.39vw;
+    align-content:center;
+    flex-direction:row;
+    border-style:solid;
+}
+
+.textTopS{
+    width:auto;
+    margin:auto;
+}
+
+.merriweather-sans-gen{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #121212;
+}
+
+/*.textTopS:hover{
+    color:#9b9b9b;
+    border-radius:10px;
+}*/
+
+.topSelector:hover{
+    filter:grayscale(50%);
+}
