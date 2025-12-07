@@ -33,9 +33,9 @@
                 <img src="../assets/Generics/down-arrow.png" class="arrow">
 
                 <GuiContent class="dropdownContent">
-                    <a href="#">basta</a>
-                    <a href="#">test2</a>
-                    <a href="#">test3</a>
+                    <a href="#">Usage Guide</a>
+                    <a href="#">Generic Guide</a>
+                    <a href="#">Stat Guide</a>
                 </GuiContent>
             </Guides>
 
@@ -52,36 +52,47 @@
         </headerDropContainer>
     </header>
     <body>
-        <div class="genContainer">
+        <div class="genContainer"> <!--top portion-->
             <div class="topPortion">
                 <button class="topSelector merriweather-sans-gen" id="menuBoxOpener" onclick="openMenu()">
                     <img src="../assets/Generics/menu.png" alt="menu icon" style="width:45px;height:35px;margin: auto;" id="iconTop"/>
-                    <div class="textTopS">
-                        Menu
-                    </div>
                 </button>
+
+                <div class="rightSide">
+                <button class="topSelector merriweather-sans-gen rightSide" id="teamSave" onclick="saveTeam()">
+                    <img src="../assets/Generics/diskette.png" alt="save icon" style="width:28px;height:27px;margin: auto;" id="iconSave"/>
+                </button>
+
+                <button class="topSelector merriweather-sans-gen rightSide" id="teamShare" onclick="shareTeam()">
+                    <img src="../assets/Generics/share.png" alt="share icon" style="width:25px;height:25px;margin: auto;" id="iconShare"/>
+                </button>
+                </div>
             </div>
+        </div>
+
+        <div class="cardContainer"> <!--main pokemon viewing area-->
+            
         </div>
     </body>
     <footer> <!--footer section, copy paste for future use in all pages-->
 
         <div class="horiBox1"> <!--first row-->
             <div class="FtGen"> <!--off. website-->
-            <img src="../assets/Generics/64px-Poké_Ball_icon.svg.png" alt="Pokemon Logo" class="IconBox"><a href="https://www.pokemon.com/us" target="_blank">Official Pokemon Website</a>
+            <img src="../assets/Generics/64px-Poké_Ball_icon.svg.png" alt="Pokemon Logo" class="IconBox"><a href="https://www.pokemon.com/us" target="_blank" style="font-weight:bold">Official Pokemon Website</a>
             </div>
 
             <div class="FtGen" style="margin-left:auto;"> <!--off. insta-->
-            <img src="../assets/Generics/Instagram_icon-removebg-preview.png" alt="IG Logo" class="IconBox"><a href="https://www.instagram.com/pokemon" target="_blank">Official Pokemon Instagram</a>
+            <img src="../assets/Generics/Instagram_icon-removebg-preview.png" alt="IG Logo" class="IconBox"><a href="https://www.instagram.com/pokemon" target="_blank" style="font-weight:bold">Official Pokemon Instagram</a>
             </div>
         </div>
 
         <div class="horiBox2">
             <div class="FtGen"> <!--off. X or twitter-->
-            <img src="../assets/Generics/thelogofortwitter.png" alt="X Logo" class="IconBox"><a href="https://x.com/Pokemon" target="_blank"> Official Pokemon X</a>
+            <img src="../assets/Generics/thelogofortwitter.png" alt="X Logo" class="IconBox"><a href="https://x.com/Pokemon" target="_blank" style="font-weight:bold"> Official Pokemon X</a>
             </div>
 
             <div class="FtGen" style="margin-right:1vh;"> <!--copyright-->
-            <img src="../assets/Generics/copyright.png" alt="Copyright Logo" class="IconBox">Dei Caridad, Nicco Arrubio
+            <img src="../assets/Generics/copyright.png" alt="Copyright Logo" class="IconBox"><span style="font-weight:bold;">Dei Caridad, Nicco Arrubio</span>
             </div>
         </div>
 

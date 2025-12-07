@@ -16,11 +16,13 @@ button{
 }
 
 .topPortion{
+    display:flex;
     width: 89.63vw;
-    height: 3.39vw;
+    height: 3.6vw;
     background-color:#C7C7BB;
-    border-radius: 10px;
+    border-radius: 1vh;
     justify-self:center;
+    align-items:center;
     margin-top:3vw;
 }
 
@@ -28,9 +30,10 @@ button{
     display:flex;
     width: fit-content;
     height: 3.39vw;
-    align-content:center;
+    width: 4.2vw;
     flex-direction:row;
-    border-style:solid;
+    margin:.4vw;
+    border-radius: 1vh;
 }
 
 .textTopS{
@@ -52,5 +55,15 @@ button{
 }*/
 
 .topSelector:hover{
-    filter:grayscale(50%);
+    background-color:#adadad;
+}
+
+.rightSide{
+    display:flex;
+    margin-left:auto;
+    gap:0.5vw;
+}
+
+.cardContainer{
+    display:flex;
 }
