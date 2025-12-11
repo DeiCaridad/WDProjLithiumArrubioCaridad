@@ -66,4 +66,55 @@ button{
 
 .cardContainer{
     display:flex;
+    height:50vw;
+    width:89.63vw;
+    margin:3vw;
+
+    justify-self:center;
+
+    flex-direction:column;
+}
+
+.topPartCards{
+    display:flex;
+    width:inherit;
+    height:24vw;
+}
+
+.bottomPartCards{
+    display:flex;
+    width:inherit;
+    align-self:end;
+    height:24vw;
+}
+
+.cardBox{
+    display:flex;
+    height:23vw;
+    width:15vw;
+    /*background-color:#ffff00;*/
+    align-self:center;
+    flex-direction:column;
+    margin: 0 auto 0 auto;
+}
+
+.cardActual{
+    display:flex;
+    height:19vw;
+    width:13vw;
+    background-color:#30302f;
+    align-self:top;
+    border-radius:10px;
+    flex-direction:row;
+    margin: 0 auto 0 auto;
+}
+
+.cardActual:hover{
+    background-color:#616160;
+}
+
+.pokeballIcon{
+    width:3vw;
+    height:3vw;
+    align-self:center;
 }

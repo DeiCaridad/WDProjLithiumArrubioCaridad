@@ -48,7 +48,7 @@ time spent editing: 21 minutes | i forogt how long its been since last update
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size:100px;
+    font-size:8vw;
     color: #FFFFFF;
 }
 
@@ -106,29 +106,29 @@ time spent editing: 21 minutes | i forogt how long its been since last update
 }
 
 #con1{
-    width:670px;
-    height:430px;
+    width:55vw;
+    height:32vw;
     margin: 0 0 0 72px;
 }
 
 #con2{
-    width:380px;
-    height:430px;
+    width:30vw;
+    height:32vw;
     margin: 0 72px 0 0;
     justify-self:end;
 }
 
 #con3{
-    width:375px;
-    height:500px;
-    margin: 450px 0 0 72px;
+    width:35vw;
+    height:30vw;
+    margin: 530px 0 0 72px;
     align-self:start;
 }
 
 #con4{
-    width:650px;
-    height:500px;
-    margin: 450px 72px 0 0;
+    width:50vw;
+    height:30vw;
+    margin: 530px 72px 0 0;
     align-self:start;
     justify-self:end;
 }
