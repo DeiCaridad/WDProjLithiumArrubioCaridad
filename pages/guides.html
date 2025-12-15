@@ -55,16 +55,56 @@
         </headerDropContainer>
     </header>
     <body>
-        <div class="titleContainer" style="border-style:solid;object-fit:fill;"> <!--title section-->
-            <img src="../assets/Backgrounds/bgimg2.jpg" alt="pikachu2" class="titleImg" style="object-fit:fill;">
+        <div class="titleContainerGuide" style="border-style:solid;"> <!--title section-->
+            <img src="../assets/Backgrounds/bgimg2.jpg" alt="pikachu2" class="titleImg" style="">
             <div class="textContainer">
-                <div class="merriweather-sans-title">
+                <div class="merriweather-sans-title" style="margin:5.5vw 0 0 0;">
                     Guides
                 </div>
-                <div class="titleDesc merriweather-sans-gen">
+                <div class="titleDesc merriweather-sans-gen" style="margin:17vw 0 0 0">
                     Feel stuck? This page has tutorials and guides for each step of making your team!
                 </div>
             </div>
+        </div>
+
+        <div class="guideContainer"> <!--guides actual-->
+            <div class="guideSec1">
+                <img src="../assets/Generics/guideIconThingGuidePart2.svg.svg">
+
+                <div class="overlay"> <!--guide box 1 content-->
+                <div class="guideSec1Title">
+                    Website Usage
+                </div>
+                <button onclick="openGeneral()" class="guideSelectorBox1">
+                    General Usage
+                </button>
+                <button onclick="openTB()" class="guideSelectorBox2">
+                    Team Builder
+                </button>
+            </div>
+            </div>
+            <div class="guideSec2">
+                <img src="../assets/Generics/guideIconThingGuidePart2.svg.svg">
+
+                <div class="overlay"> <!--guide box 1 content-->
+                <div class="guideSec1Title">
+                    Team Building
+                </div>
+                <button onclick="openBasic()" class="guideSelectorBox1">
+                    Basic Guide
+                </button>
+                <button onclick="openStatistics()" class="guideSelectorBox2">
+                    Statistical Guide
+                </button>
+                <button onclick="openCasual()" class="guideSelectorBox3">
+                    Casual Guide
+                </button>
+                <button onclick="openCasual()" class="guideSelectorBox4">
+                    Competitive Guide
+                </button>
+            </div>
+            </div>
+        </div>
     </body>
     <footer> <!--footer section, copy paste for future use in all pages-->
 

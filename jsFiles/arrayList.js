@@ -30,3 +30,11 @@ arrays below will be sorted by page according to the README file in the github r
     export const TitleBottom = [
         
     ]
+
+// P4
+
+const carouselData = [
+    { src:"../assets/Thumbnails/horizons-169-en.png", alt: 'Description 1', title: 'Slide 1 Title', subtitle: 'Subtitle 1' },
+    { src: "../assets/Thumbnails/horizons-169-en.png", alt: 'Description 2', title: 'Slide 2 Title', subtitle: 'Subtitle 2' },
+    { src: 'image3.jpg', alt: 'Description 3', title: 'Slide 3 Title', subtitle: 'Subtitle 3' }
+];

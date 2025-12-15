@@ -1,0 +1,6 @@
+.articleCarouselContainer{
+  display:flex;
+  height:50vw;
+  width:auto;
+  border-style:solid;
+}
