@@ -1,4 +1,4 @@
-# WDProjLithiumArrubioCaridad Project Proposal
+# WDProjLithiumArrubioCaridad Project Proposal (UPDATED)
 
 # Pokémon: Rebuilt
 
@@ -9,6 +9,11 @@ Bulbapedia. (2025, October 20). Great Ball - Bulbapedia, the community-driven Po
 
 ### Website Description:
 - This website is designed to let players build teams for each generation/iteration of Pokémon. The users of the website will have the liberty to choose between creating teams for casual, single-player games of Pokémon and teams for more competetive and professional gameplay. Each mode of creation will also have the option to view and edit in-game specifics to further optimize each team. Additionally, this website will also display and showcase events, feats, and statistics from the Pokémon community.
+
+### Planned Implementation of HTML Forms:
+- HTML Forms will be used to save the user's data regarding the team. This will include the team name, the kind of pokemon in the team, the moves and statistics of each Pokemon, and other related characteristics.
+- #### Updated Wireframe
+  - Each updated wireframe will be displayed in the "Updated Layout" portion, which will be below the "Wireframe" portion of the readme file.
 
 ### Website Outline:
 - Home Page
