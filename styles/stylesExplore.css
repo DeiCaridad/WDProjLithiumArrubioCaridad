@@ -4,3 +4,11 @@
   width:auto;
   border-style:solid;
 }
+
+.articleCarouselActual{
+  display:flex;
+  height:30vw;
+  width:auto;
+  border-style:solid;
+  background-color: blue;
+}

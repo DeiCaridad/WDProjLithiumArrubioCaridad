@@ -1,5 +1,11 @@
 /*Main Area*/
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family:"Inter","Merriweather Sans", sans-serif;
+}
+
 button{
     background:none;
     border:none;
@@ -10,8 +16,7 @@ button{
     width:auto;
     height:auto;
 
-    /*border:2px;
-    border-style:solid;
+    /*border:2px;:solid;
     border-color:black;*/
 }
 
@@ -22,8 +27,188 @@ button{
     background-color:#C7C7BB;
     border-radius: 1vh;
     justify-self:center;
-    align-items:center;
+    align-items:flex-start;
+    flex-direction:column;
     margin-top:3vw;
+
+    transition:
+        height 0.25s ease-in-out,
+        align-items 0.25s ease-in-out,
+        opacity 0.25s ease-in-out;
+}
+
+.topPortion:hover{
+    height:10vw;
+    align-items:flex-start;
+    position:relative;
+}
+
+.topArea {
+    height: 3.6vw;
+    display: flex;
+    align-items: center;
+}
+
+.expandableTopArea{
+    display:flex;
+    height: 0;
+    width:inherit;
+    overflow: visible;
+    opacity: 0;
+    pointer-events: none;
+    align-content:center;
+    justify-content:space-around;
+    flex-direction:row;
+    margin-top:1.5vw;
+    padding:auto;
+    margin:3vw 0 0 0.3;
+
+    transition:
+        height 0.25s ease,
+        opacity 0.2s ease;
+}
+
+.topPortion:hover .expandableTopArea{
+    height: 7vw; /* 15 - 3.6 */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropContent{
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+
+    width: 4vw;
+    height:fit-content;
+
+    z-index: 999;
+}
+
+.dropContent a{
+    display:block;
+    padding: 8px;
+}
+
+.dropdownSelector:hover .dropContent{
+    display:flex;
+    z-index: index max;
+}
+
+.topObject{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+    height:3vw;
+    width:13vw;
+    background-color:#3B3B38;
+    border-radius:1vh;
+    margin-left:0.4vw;
+    z-index:1;
+}
+.topObjectText{
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: 6.5vw;
+    font-weight: bold;
+    font-style: normal;
+    color: #E6E6E6;
+    margin:0 0 0 .3vw;
+
+}
+
+.genContent{
+    position:relative;
+}
+
+.dropdownSelector{
+    display:flex;
+    position:relative;
+    width:fit-content;
+    height:2.3vw;
+    width:4vw;
+    background-color:#E6E6E6;
+    justify-content:flex-end;
+    margin:0 .4vw 0 2vw;
+    border-radius:1vh;
+}
+
+.generationBox{
+    display:flex;
+    position:relative;
+    top:100%;
+    right:0;
+    height:2.3vw;
+    width:4vw;
+
+    align-items:center;
+    justify-content:center;
+    background-color:#E6E6E6;
+
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #3B3B38;
+}
+
+.generationBox:hover{
+    background-color: #adadad;
+}
+
+.dropdownGen{
+    width: 100%;
+    height: 100%;
+
+    display: flex inline-block;
+    align-items: center;
+    align-self:right;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+.dropdownSelector:hover{
+    background-color:#bebbbb;
+}
+
+.merriweather-sans-gen-dropDown{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+
+.merriweather-sans-dropdownActual{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+
+.topBox{
+    opacity: 0;
+    pointer-events:none;
+    transition: opacity 0.2s ease;
+    align-self:center;
+
+}
+
+.topPortion:hover .topBox {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .topSelector{
@@ -34,6 +219,13 @@ button{
     flex-direction:row;
     margin:.4vw;
     border-radius: 1vh;
+}
+
+.boxPartDropDown{
+    display:flex;
+    width:11.25vw;
+    height:2.188vw;
+    background-color:#3B3B38;
 }
 
 .textTopS{
@@ -106,6 +298,7 @@ button{
     align-self:top;
     border-radius:10px;
     flex-direction:row;
+    cursor:pointer;
     margin: 0 auto 0 auto;
 }
 
@@ -117,4 +310,10 @@ button{
     width:3vw;
     height:3vw;
     align-self:center;
+}
+
+.cardContent{
+    display:flex;
+    width:100%;
+    height:100%;
 }

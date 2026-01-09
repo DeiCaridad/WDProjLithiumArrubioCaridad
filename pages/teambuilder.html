@@ -8,10 +8,11 @@
         <meta name="Author" content="Dei Caridad, Nicco Arrubio">
         <title>Team Builder - Pokemon: Rebuilt</title>
         <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/stylesHome.css">
         <link rel="stylesheet" href="../styles/stylesTB.css">
         <link rel="icon" href="../assets/ProjFavicon.png" sizes="32x32" type="image/png">
-        <script src="script.js" defer></script>
-        <script src="teamBuilder.js" defer></script>
+        <script src="../main.js" defer></script>
+        <script src="../jsFiles/teamBuilder.js" defer></script>
     </head>
     <header> <!--copy paste for future use in all pages-->
         <a href="../index.html"><img src="../assets/ProjFavicon.png" alt="Project Icon" style="width:3.25vw;height:3.25vw;margin-left:1vh;"></a>
@@ -54,10 +55,13 @@
     </header>
     <body>
         <div class="genContainer"> <!--top portion-->
-            <div class="topPortion">
-                <button class="topSelector merriweather-sans-gen" id="menuBoxOpener" onclick="openMenu()">
+            <div class="topPortion" id="topPortion">
+                <div class="topArea">
+                <div class="leftSide">
+                <button class="topSelector merriweather-sans-gen" id="menuBoxOpener">
                     <img src="../assets/Generics/menu.png" alt="menu icon" style="width:45px;height:35px;margin: auto;" id="iconTop"/>
                 </button>
+                </div>
 
                 <div class="rightSide">
                 <button class="topSelector merriweather-sans-gen rightSide" id="teamSave" onclick="saveTeam()">
@@ -68,14 +72,75 @@
                     <img src="../assets/Generics/share.png" alt="share icon" style="width:25px;height:25px;margin: auto;" id="iconShare"/>
                 </button>
                 </div>
+
+                </div>
+
+                <div class="expandableTopArea"> 
+                    <div class="topObject" id="topObject1"> <!--set to blue to check for visibility-->
+                        <span class="topObjectText">Team Generation:</span> <!--team gen-->
+                        <div class="dropdownSelector">
+                            <button class="dropdownGen" id="dropdownGen"></button>
+
+                            <div class="dropContent">
+                                <button class="generationBox" id="gen1" onclick="selectGeneration(1)" style="border-top-left-radius:1vh;border-top-right-radius:1vh;">1</button>
+                                <button class="generationBox" id="gen2" onclick="selectGeneration(2)">2</button>
+                                <button class="generationBox" id="gen3" onclick="selectGeneration(3)">3</button>
+                                <button class="generationBox" id="gen4" onclick="selectGeneration(4)">4</button>
+                                <button class="generationBox" id="gen5" onclick="selectGeneration(5)">5</button>
+                                <button class="generationBox" id="gen6" onclick="selectGeneration(6)">6</button>
+                                <button class="generationBox" id="gen7" onclick="selectGeneration(7)">7</button>
+                                <button class="generationBox" id="gen8" onclick="selectGeneration(8)">8</button>
+                                <button class="generationBox" id="gen9" onclick="selectGeneration(9)" style="border-bottom-left-radius:1vh;border-bottom-right-radius:1vh;">9</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topObject merriweather-sans-gen" id="topObject2"> <!--team type-->
+                        <span class="topObjectText">Team/Build Type:   </span>
+                        <div class="dropdownSelector">
+                            <button class="dropdownGen" id="dropdownMode"></button>
+
+                            <div class="dropContent">
+                                <button class="generationBox" id="ModeCas" onclick="selectMode('Casual')" style="border-top-left-radius:1vh;border-top-right-radius:1vh;">Casual</button>
+                                <button class="generationBox" id="ModeCom" onclick="selectMode('Comp')" style="border-bottom-left-radius:1vh;border-bottom-right-radius:1vh;">Comp</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topObject merriweather-sans-gen" id="topObject3">
+                        <span class="topObjectText">Global Shiny Toggle:</span>
+                        <div class="dropdownSelector">
+                            <button class="dropdownGen" id="dropdownShiny"></button>
+
+                            <div class="dropContent">
+                                <button class="generationBox" id="Shiny" onclick="selectShiny('Shiny')" style="border-top-left-radius:1vh;border-top-right-radius:1vh;">Shiny</button>
+                                <button class="generationBox" id="NonShiny" onclick="selectShiny('Non-Shiny')" style="border-bottom-left-radius:1vh;border-bottom-right-radius:1vh;">Non-Shiny</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topObject merriweather-sans-gen" id="topObject4">
+                        <span class="topObjectText">Global Sprite Type:</span>
+                        <div class="dropdownSelector">
+                            <button class="dropdownGen" id="dropdownSpriteType"></button>
+
+                            <div class="dropContent">
+                                <button class="generationBox" id="2DTYPE" onclick="selectSpriteType('2D')" style="border-top-left-radius:1vh;border-top-right-radius:1vh;">2D</button>
+                                <button class="generationBox" id="3DTYPE" onclick="selectSpriteType('3D')" style="border-bottom-left-radius:1vh;border-bottom-right-radius:1vh;">3D</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
         <div class="cardContainer"> <!--main pokemon viewing area-->
             <div class="topPartCards">
                 <div class="cardBox">
-                    <div class="cardActual" id="card1">
-                    
+                    <div class="cardActual" id="card1" onclick="openSelector('TOP1')"> <!--format: openSelector('LOCATIONCard#')-->
+                    <div class="cardContent" id="cardContentImage"> <!-- HEY DONT FORGET TO ADD A VISIBLE SEARCH THING FOR IT-->
+                        
+                    </div>
                     </div>
                     <img src="../assets/Generics/64px-Poké_Ball_icon.svg.png" class="pokeballIcon">
                 </div>
@@ -98,7 +163,6 @@
             <div class="bottomPartCards">
                 <div class="cardBox">
                     <div class="cardActual" id="card1">
-                    
                     </div>
                     <img src="../assets/Generics/64px-Poké_Ball_icon.svg.png" class="pokeballIcon">
                 </div>
