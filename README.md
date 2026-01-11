@@ -13,7 +13,7 @@ Bulbapedia. (2025, October 20). Great Ball - Bulbapedia, the community-driven Po
 ### Planned Implementation of HTML Forms:
 - HTML Forms will be used to save the user's data regarding the team. This will include the team name, the kind of pokemon in the team, the moves and statistics of each Pokemon, and other related characteristics.
 - #### Updated Wireframe
-  - Each updated wireframe will be displayed in the "Updated Layout" portion, which will be below the "Wireframe" portion of the readme file.
+  - Each updated wireframe will be displayed in the "Updated Wireframe" portion, which will be below the "Wireframe" portion of the readme file.
 
 ### Website Outline:
 - Home Page
@@ -50,3 +50,28 @@ Bulbapedia. (2025, October 20). Great Ball - Bulbapedia, the community-driven Po
 
 ### Sources: 
 ![Sources](https://github.com/user-attachments/assets/e9ce7ca3-f0a9-4e8c-903d-cf38381be17b)
+
+## Updated Wireframe
+
+### Team Builder:
+<img width="1080" height="1061" alt="TeamBuilderSave" src="https://github.com/user-attachments/assets/feea3c82-8f07-4d6a-b752-9b603dd7232b" />
+
+- This updated UI will be accessed via the save button, represented by the floppy disk in the menu bar.
+- HTML forms will be used in saving/collecting user input data (the Pokemon in the team and their corresponding attributes), and saving them via localStorage. The data saved in localStorage will be retreived via the "Load Team" dropdown and a dropdown menu containing each team name will be displayed.
+
+### Home Page
+<img width="1080" height="2229" alt="HomePagePreference" src="https://github.com/user-attachments/assets/e545b5d0-0779-4397-9d13-66df328c4f2b" />
+
+- User data regarding their prefererred article type will be collected via HTML forms. From there, only articles with those tags will be displayed.
+- The collected data will be saved via localStorage.
+- Additionally, this page will be directly connected to the Highlights page, letting it show articles that match the user's input.
+  - Non-related articles may still appear given specific scenarios (e.x. if the user only selects "Games" and goes to the Highlights page, Media Highlights may still be seen as this is a major section of the page.) unless the visibility is toggled in the Highlights Page.
+
+### Highlights Page
+<img width="1080" height="4000" alt="highlightprefere" src="https://github.com/user-attachments/assets/d90d66c4-c047-4593-92f1-8e8a213dca54" />
+
+
+- Similar to the Home Page, this will save the User's preferences for future use.
+
+
+
